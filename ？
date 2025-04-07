@@ -1,0 +1,7 @@
+<script type="text/javascript">
+  var password = "あなたのパスワード";
+  var pass = prompt("パスワードを入力してください:");
+  if (pass !== password) {
+    alert("パスワードが間違っています");
+    window.location.href = "https://example.com"; // パスワード間違い時に遷移するURL }
+</script>
