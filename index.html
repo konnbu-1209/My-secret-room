@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Secret Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="password-screen">
+    <h2>パスワードを入力してください</h2>
+    <input type="password" id="password-input" placeholder="パスワード">
+    <button onclick="checkPassword()">開く</button>
+    <p id="error-message"></p>
+  </div>
+
+  <div id="content-screen" style="display:none;">
+    <h1>ようこそ</h1>
+
+    <section>
+      <h2>音源</h2>
+      <audio controls>
+        <source src="アンチサイクロン　付録.mp3" type="audio/mpeg">
+        お使いのブラウザでは音声再生がサポートされていません。
+      </audio>
+    </section>
+
+    <section>
+      <h2>画像</h2>
+      <img src="sample1.jpg" alt="サンプル画像1" style="max-width: 80%; margin: 20px 0;">
+      <img src="sample2.jpg" alt="サンプル画像2" style="max-width: 80%; margin: 20px 0;">
+    </section>
+
+    <section>
+      <h2>動画</h2>
+      <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">サンプル動画を見る</a></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        frameborder="0" allowfullscreen></iframe>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
